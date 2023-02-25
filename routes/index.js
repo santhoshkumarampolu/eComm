@@ -2,6 +2,6 @@ var express = require('express');
 var router = express.Router();
 let landing = require('../controller/landing')
 /* GET home page. */
-router.get('/',landing.get_landing );
-
+router.get('/',landing.get_landing);
+router.post('/',landing.sumbit_lead);
 module.exports = router;
