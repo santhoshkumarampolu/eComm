@@ -5,4 +5,5 @@ let landing = require('../controller/landing')
 router.get('/',landing.get_landing);
 router.post('/',landing.sumbit_lead);
 router.get('/leads',landing.show_leads);
+router.get('/lead/:lead_id',landing.show_lead);
 module.exports = router;
