@@ -1,6 +1,6 @@
 
 module.exports = {
-    up: (queryInterface, Sequelize) => {
+    up:  (queryInterface, Sequelize) => {
       return queryInterface.createTable('Leads', {
         id:{
             allowNull:false,
@@ -22,7 +22,7 @@ module.exports = {
         }
       });
     },
-    down: (queryInterface, Sequelize) => {
-      return queryInterface.bulkDelete('Leads');
+    down:  (queryInterface, Sequelize) => {
+      return queryInterface.dropTable('Leads');
     }
   };
